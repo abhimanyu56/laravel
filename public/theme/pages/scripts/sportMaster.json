@@ -1,0 +1,11 @@
+
+{
+  "total_count": 769,
+  "incomplete_results": false,
+  "items":
+
+
+
+[{"id":1,"category_id":3,"full_name":"Archery"},{"id":2,"category_id":4,"full_name":"Basketball"},{"id":3,"category_id":5,"full_name":"Bowling"},{"id":4,"category_id":6,"full_name":"Cricket"},{"id":5,"category_id":7,"full_name":"Chess"},{"id":6,"category_id":8,"full_name":"Cycling"},{"id":7,"category_id":9,"full_name":"Football"},{"id":8,"category_id":10,"full_name":"Gym"},{"id":9,"category_id":11,"full_name":"Gymnastics"},{"id":10,"category_id":12,"full_name":"Horse Riding"},{"id":11,"category_id":13,"full_name":"Karate"},{"id":12,"category_id":14,"full_name":"Martial Arts"},{"id":13,"category_id":15,"full_name":"Swimming"},{"id":14,"category_id":16,"full_name":"Skating"},{"id":15,"category_id":17,"full_name":"Squash"},{"id":16,"category_id":18,"full_name":"Taekwondo"},{"id":17,"category_id":19,"full_name":"Tennis"},{"id":18,"category_id":20,"full_name":"Volleyball"},{"id":19,"category_id":21,"full_name":"Zumba"},{"id":20,"category_id":22,"full_name":"Carrom"}]
+
+}
