@@ -9,8 +9,9 @@ Welcome
  <div class="page-content">
                     
      
+     <h1>Laravel Demo Project</h1>
      
-                                        <div class="row" style = "margin-top:17%;">
+                                        <div class="row" style = "margin-top:14%;">
                         <div class="col-md-6">
                             <div class="portlet light portlet-fit ">
                                 
