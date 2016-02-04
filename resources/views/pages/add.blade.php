@@ -115,7 +115,7 @@ Welcome
                                                                 <span class="required"> * </span>
                                                             </label>
                                                             <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="phone" />
+                                                                <input type="text" class="form-control" name="phone" maxlength = "12" />
                                                                 <span class="help-block"> Provide your phone number </span>
                                                             </div>
                                                         </div>

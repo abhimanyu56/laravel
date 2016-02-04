@@ -12,22 +12,27 @@ Welcome
      
                    <div class="portlet-title">
                                     
-                                    <div class="actions pull-right">
+                                    
+                                </div>
+     
+     
+     <div class="pull-right">
                                         <div class="btn-group btn-group-devided">
                                             <a href="{{ URL::asset('/add')}}" class="btn btn-lg green"> Add Academy
                                                                         <i class="fa fa-plus"></i>
                                                                     </a>
                                         </div>
                                     </div>
-                                </div>
      
      
      
      
      
      @if (count($academy) < 1)
-                              There are no records.
-     
+                              
+                              <div class = "pull-left">
+     <h2>There are no records.</h2>
+                                </div>
                               
                               
                               @else
@@ -36,7 +41,7 @@ Welcome
      
      
      
-     <div class="col-md-6">
+     <div class="col-md-6 pull-left">
                             <!-- BEGIN SAMPLE TABLE PORTLET-->
                             <div class="portlet">
                                 <div class="portlet-title">
@@ -65,10 +70,10 @@ Welcome
                                                 <tr>
                                                     <td class="highlight">
                                                         <div class="success"></div>
-                                                        <a href="javascript:;"> {{$aca->academy_name}} </a>
+                                                        <a onclick="loadAcademy({{$aca->academy_id}})"> {{$aca->academy_name}} </a>
                                                     </td>
                                                      <td>
-                                                        <a href="javascript:;" class="btn btn-outline btn-circle red btn-sm blue">
+                                                        <a onclick="loadAcademy({{$aca->academy_id}})" class="btn btn-outline btn-circle red btn-sm blue">
                                                             <i class="fa fa-share"></i> View </a>
                                                     </td>
                                                     
@@ -96,6 +101,24 @@ Welcome
      
      
                     
+<div id="js-grid-juicy-projects" class="cbp display-none">
+            <div class="cbp-item graphic">
+             <a href="{{ URL::asset('academy')}}" class="cbp-singlePage cbp-l-caption-buttonLeft btn red uppercase btn red uppercase" id = "loadAcademyPage" rel="nofollow">more info</a>
+             </div>
+     </div>
+
                 </div>
 
 @stop
+
+
+<script>
+    
+    function loadAcademy(id){
+    
+    $("#loadAcademyPage").attr("href", "academy/" + id);    
+         $( "#loadAcademyPage" ).click();
+    
+    }
+    
+</script>

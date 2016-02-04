@@ -43,6 +43,11 @@ Route::get('explore', [
     'as' => '/', 'uses' => 'AdminController@explore'
 ]);
 
+Route::get('academy/{id}', [
+    'as' => '/', 'uses' => 'AdminController@loadAcademy'
+]);
+
+
 Route::post('explore', [
     'as' => '/', 'uses' => 'AdminController@getExplore'
 ]);

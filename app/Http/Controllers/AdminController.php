@@ -7,7 +7,7 @@ use App\Tags;
 use App\Artifacts;
 use Illuminate\Http\Request;
 use Illuminate\Http\Input;
-//use ;
+use Mail;
 
 class AdminController extends Controller {
 
@@ -142,27 +142,44 @@ class AdminController extends Controller {
      }
     
     public function explore(){
-        
-        
-        
-            return view('pages.explore');
+        return view('pages.explore');
     }
     
     
      public function getExplore(){
-        
-         
-         
         $academy = Academy::all();
         $res = array();
         foreach($academy as $aca){
             $temp = array($aca->academy_id , $aca->latitude , $aca->longitude);
             array_push($res, $temp);
         }
-        
-      
         return $res;
     }
+    
+    public function loadAcademy($id){
+        
+        $academy = Academy::where('academy_id', $id)->first();
+        
+        
+        
+        $data = array (
+            'academy_name' => $academy->academy_name
+        );
+        
+        Mail::send('email.email', $data, function ($message) {
+            $message->from('us@example.com', 'Demo Account');
+            $message->subject('Enquiry');
+            $message->to('demoforlaravel@gmail.com');
+            
+        });
+        
+        
+        
+        $tags = Tags::where('academy_id', $id)->get();
+        $artifacts = Artifacts::where('academy_id', $id)->get();
+        return view('pages.academy')->with('academy' , $academy)->with("tags" , $tags)->with("artifacts" , $artifacts);
+    }
+    
 }
 
 

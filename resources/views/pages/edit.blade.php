@@ -44,7 +44,7 @@ Edit
                                                                 <span class="required"> * </span>
                                                             </label>
                                                             <div class="col-md-4">
-                                                                <input type="text" class="form-control" name="phone" value = {{$academy->phone}} />
+                                                                <input type="text" class="form-control" name="phone" value = {{$academy->phone}} maxlength = "12" />
                                                                 <span class="help-block"> Provide your phone number </span>
                                                             </div>
                                                         </div>

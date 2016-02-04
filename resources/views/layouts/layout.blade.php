@@ -39,7 +39,12 @@
         
         <link href="{{ URL::asset('/theme/global/plugins/jquery-file-upload/css/jquery.fileupload.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{ URL::asset('/theme/global/plugins/jquery-file-upload/css/jquery.fileupload-ui.css')}}" rel="stylesheet" type="text/css" />
+        
+         <link href="{{ URL::asset('/theme/global/plugins/cubeportfolio/css/cubeportfolio.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ URL::asset('/theme/pages/css/portfolio.min.css')}}" rel="stylesheet" type="text/css" />
        
+        
+        
         
         
         <!-- END THEME LAYOUT STYLES -->
@@ -149,6 +154,13 @@
         <script src="{{ URL::asset('/theme/pages/scripts/components-bootstrap-tagsinput.min.js') }}" type="text/javascript"></script>
         
          <script src="{{ URL::asset('/theme/global/plugins/ion.rangeslider/js/ion.rangeSlider.min.js') }}" type="text/javascript"></script>
+        
+        
+        
+        <script src="{{ URL::asset('/theme/global/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js') }}" type="text/javascript"></script>
+        <script src="{{ URL::asset('/theme/pages/scripts/portfolio-1.min.js') }}" type="text/javascript"></script>
+        
+        
         
         
           <script src="https://maps.googleapis.com/maps/api/js?libraries=places" type="text/javascript"></script>

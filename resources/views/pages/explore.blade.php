@@ -16,6 +16,14 @@ Explore
      </center>
                 
                 <div id="map" style="width: 100%; height: 600px;"></div>
+     
+     
+                <div id="js-grid-juicy-projects" class="cbp display-none">
+            <div class="cbp-item graphic">
+             <a href="{{ URL::asset('academy')}}" class="cbp-singlePage cbp-l-caption-buttonLeft btn red uppercase btn red uppercase" id = "loadAcademyPage" rel="nofollow">more info</a>
+             </div>
+     </div>
+     
                 </div>
 @stop
 
@@ -65,7 +73,8 @@ Explore
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
-         alert(locations[i][0]);
+         $("#loadAcademyPage").attr("href", "academy/" + locations[i][0]);    
+         $( "#loadAcademyPage" ).click();
         }
       })(marker, i));
     }
