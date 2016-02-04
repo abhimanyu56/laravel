@@ -159,9 +159,6 @@ class AdminController extends Controller {
     public function loadAcademy($id){
         
         $academy = Academy::where('academy_id', $id)->first();
-        
-        
-        
         $data = array (
             'academy_name' => $academy->academy_name
         );
@@ -173,11 +170,13 @@ class AdminController extends Controller {
             
         });
         
-        
-        
         $tags = Tags::where('academy_id', $id)->get();
         $artifacts = Artifacts::where('academy_id', $id)->get();
         return view('pages.academy')->with('academy' , $academy)->with("tags" , $tags)->with("artifacts" , $artifacts);
+    }
+    
+    public function getProfile(){
+        return view('pages.profile');
     }
     
 }

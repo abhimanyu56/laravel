@@ -52,6 +52,10 @@ Route::post('explore', [
     'as' => '/', 'uses' => 'AdminController@getExplore'
 ]);
 
+Route::get('profile', [
+    'as' => '/', 'uses' => 'AdminController@getProfile'
+]);
+
 
 
 /*
