@@ -29,7 +29,28 @@ Explore
 
 
 <script>
-    setTimeout(function() { loadMap(); }, 5000);
+var x = 0;
+var intervalID = setInterval(function () {
+
+   if(window.jQuery){
+       window.clearInterval(intervalID);
+        loadMap();
+    }
+
+   if (++x === 10) {
+       window.clearInterval(intervalID);
+   }
+}, 2000);
+    
+    
+    
+    //setTimeout(function() { loadMap(); }, 5000);
+    
+    
+    
+    //loadMap();
+    
+    
     
     </script>
 
