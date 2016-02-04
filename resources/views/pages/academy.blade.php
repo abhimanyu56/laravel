@@ -41,9 +41,7 @@
             <b>{{$tag->tag_name}}</b>, 
             @endforeach
             
-            
-        
-        <div class="cbp-l-inline-desc">{{$academy->description}}</div>
+        <div class="cbp-l-inline-desc"><?=$academy->description?></div>
          
     </div>
 </div>

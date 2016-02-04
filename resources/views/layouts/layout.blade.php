@@ -216,7 +216,8 @@ rules: {
                         email: true
                     },
                     phone: {
-                        required: true
+                        required: true,
+                        number: true
                     },
                     address: {
                         required: true
